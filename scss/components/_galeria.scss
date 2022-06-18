@@ -1,0 +1,46 @@
+@import "../base/mixin";
+
+.galeria-main {
+
+	.galeria-titulo {
+		margin-top: 5rem;
+	}
+
+	.menu-fixed{
+		.btn {
+			@extend %buttons;
+		}
+	}
+
+	.card {
+		transition: all .1s ease-in-out;
+		font-family: slthin;
+		font-size: 1rem;
+		img {
+			width: 100%;
+			max-height: 255px;
+			padding: .7rem;
+			border-radius: 1rem;
+			transition: all .1s ease-in-out;
+		}
+	}
+	.card-body {
+		.btn {
+			@extend %buttons;
+		}
+	}
+	.menu-fixed .btn {
+		&:hover {
+			@include hovers(.9,  lighten(#7F38DE, 20));
+		}
+	}
+
+	.card {
+		&:hover {
+			border: 1px solid black;
+			padding: .4rem;
+		}
+	}
+
+
+}

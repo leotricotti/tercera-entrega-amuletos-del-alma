@@ -1,0 +1,236 @@
+@font-face {
+    font-family: time_burner_bold;
+    src: url(../fonts/timeburnerbold.ttf);
+}
+
+@font-face {
+    font-family: slthin;
+    src: url(../fonts/SlatePro-Light.ttf);
+}
+
+@font-face {
+    font-family: time_burner_nav;
+    src: url(../fonts/timeburner_regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    background: rgb(232, 217, 250);
+    background: linear-gradient(180deg, rgb(240, 231, 252) 60%, rgba(181, 184, 254, 1) 100%);
+    background-attachment: fixed;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.disclaimer {
+    display: none;
+}
+
+@import "../scss/components/header";
+@import "../scss/components/footer";
+@import "../scss/components/index";
+@import "../scss/components/productos";
+@import "../scss/components/galeria";
+@import "../scss/components/nosotras";
+@import "../scss/components/contacto";
+@import "../scss/base/extends";
+@import "../scss/base/mixin";
+
+
+@media (min-width: 62rem) {
+
+    #header {
+        height: 4rem;
+
+        .navbar-toggler {
+            display: none;
+        }
+
+        .navbar-nav {
+            display: flex;
+            justify-content: flex-end;
+            height: 4.5rem;
+            background-color: transparent;
+            overflow-y: hidden;
+            padding: .5rem 6rem 0 6rem;
+        }
+
+        .nav-item a {
+            color: #7F38DE;
+            margin: 0 1rem;
+        }
+
+        .logo-container {
+            height: 4rem;
+            padding: 0 0 0 6rem;
+        }
+
+        .logo-container img {
+            width: 100%;
+        }
+
+        .logo-container p {
+            font-size: .9rem;
+            text-align: center;
+            padding-left: .2rem;
+        }
+    }
+
+    .index-container {
+        display: grid;
+        grid-template:
+            "header"4rem "carrusel"35rem "marketing"25rem "info"25rem "footer"6rem;
+    }
+
+    .index-main {
+
+        .carousel {
+            padding-top: 0;
+        }
+
+        .btn-carr {
+            bottom: 1rem;
+            left: 7rem;
+        }
+
+        .container-marketing {
+            display: flex;
+        }
+
+        .item-marketing {
+            width: 100%;
+            margin: 2rem 0rem;
+        }
+
+        .item-marketing img {
+            width: 140px;
+            height: 140px;
+        }
+
+        .index-info {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .info-item {
+            margin-top: 2rem;
+        }
+    }
+
+    .productos-container {
+        display: grid;
+        grid-template: "header"4.5rem "amuletos"44rem "anillos"44rem "aros"44rem "dijes"
+            32rem "footer"auto;
+    }
+
+    .productos-main {
+        margin-top: 1rem;
+
+        .productos-amuletos,
+        .productos-anillos,
+        .productos-aros,
+        .productos-dijes {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .productos-anillos,
+        .productos-dijes {
+            flex-direction: row-reverse;
+        }
+
+        .productos-txt {
+            display: flex;
+            flex-direction: column;
+
+            p {
+                margin: 0 2rem;
+            }
+        }
+
+        .img-desktop {
+            display: block;
+        }
+
+        .img-mobile {
+            width: 60%;
+            margin: 6rem 8rem 0 8rem;
+        }
+
+        .separador {
+            margin: 4rem 0;
+        }
+    }
+
+    .galeria-main {
+        margin: 0 12rem 4rem 12rem;
+    }
+
+    .nosotras-container {
+        display: grid;
+        grid-template: "header"3.1rem "nosotras"41rem "taller"41rem "feria1"41rem "feria2"41rem "footer"6rem;
+    }
+
+    .nosotras-main {
+        margin-top: 5rem;
+
+        .nosotras,
+        .nosotras-taller,
+        .nosotras-feria1,
+        .nosotras-feria2 {
+            display: flex;
+            justify-content: space-between;
+
+            .nosotras-txt {
+                display: flex;
+                flex-direction: column;
+                margin-top: 1rem;
+
+                p {
+                    margin: 0 2rem;
+                }
+            }
+
+            .nosotras-img {
+                img {
+                    width: 540px;
+                    height: 540px;
+                }
+            }
+        }
+
+        .nosotras-taller,
+        .nosotras-feria2 {
+            flex-direction: row-reverse;
+        }
+
+        .nosotras-mapa1,
+        .nosotras-mapa2 {
+            iframe {
+                display: block;
+                margin: 4rem 0 0 10rem;
+            }
+        }
+
+        .separador {
+            margin: 4rem 0;
+        }
+    }
+}
+

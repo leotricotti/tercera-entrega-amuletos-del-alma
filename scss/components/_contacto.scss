@@ -1,0 +1,27 @@
+@import "../base/mixin";
+
+.contacto-container {
+	display: grid;
+	grid-template: "header" 3.1rem "contacto" 38rem "footer" 6rem;
+}
+.form-contact {
+	grid-area: contacto;
+	margin-top: 3rem;
+	h2 {
+		text-align: center;
+		margin-bottom: 2rem;
+	}
+
+	.btn {
+			@extend %buttons;
+			margin-top: 2rem;
+			margin-bottom: 5rem;
+	}
+	
+
+    .btn {
+		&:hover {
+            @include hovers(.3rem 1.5rem, darken(#7F38DE, 12) );
+        }
+    }
+}

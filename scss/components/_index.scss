@@ -1,0 +1,102 @@
+@import "../base/mixin";
+
+.index-container {
+    display: grid;
+    grid-template: "header"3.1rem "carrusel"14rem "marketing"70rem "info"35rem "footer"6rem;
+}
+
+.index-main {
+    margin-top: 3rem;
+    
+    .carousel {
+        grid-area: carrusel;
+        position: relative;
+    }
+
+    .carousel-item {
+        img {
+            width: 100%;
+            min-height: 14rem;
+            filter: sepia(60%);
+            filter: brightness(1.5);
+        }
+    }
+
+    .btn-carr {
+        position: absolute;
+        top: 17rem;
+    }
+
+
+    .btn-car {
+        @extend %buttons
+    }
+
+    .carousel-caption {
+        em {
+            color: rgb(167, 167, 167);
+        }
+    }
+
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        background-color: rgb(128, 128, 128);
+        text-align: center;
+    }
+
+    .container-marketing {
+        grid-area: marketing;
+    }
+
+    .item-marketing {
+        text-align: center;
+        padding: 2rem 1rem;
+        img {
+            width: 100px;
+            height: 100px;
+        }
+
+        h2 {
+            padding-top: 1rem;
+            text-align: center;
+        }
+
+        p {
+            padding: 0 4rem;
+        }
+    }
+
+    .button {
+        @extend %buttons;
+    }
+
+    .index-info {
+        grid-area: info;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        border-top: 1px solid gray;
+        padding-top: 1rem;
+    }
+
+    .info-item {
+        i {
+            font-size: 2.5rem;
+            padding: 3rem 0;
+        }
+        p {
+            font-family: time_burner_bold;
+            font-size: 1.1rem;
+        }
+    }
+
+    .row {
+        margin-right: 0;
+    }
+
+    .btn-car,
+    .button {
+        &:hover {
+            @include hovers(1.1, darken(#7F38DE, 20) );
+        }
+    }
+}

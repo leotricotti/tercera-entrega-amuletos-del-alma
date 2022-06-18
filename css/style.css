@@ -1,0 +1,501 @@
+@font-face {
+  font-family: time_burner_bold;
+  src: url(../fonts/timeburnerbold.ttf);
+}
+@font-face {
+  font-family: slthin;
+  src: url(../fonts/SlatePro-Light.ttf);
+}
+@font-face {
+  font-family: time_burner_nav;
+  src: url(../fonts/timeburner_regular.ttf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  background: rgb(232, 217, 250);
+  background: linear-gradient(180deg, rgb(240, 231, 252) 60%, rgb(181, 184, 254) 100%);
+  background-attachment: fixed;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.disclaimer {
+  display: none;
+}
+
+#header {
+  grid-area: header;
+  background-color: rgb(232, 217, 250);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.9);
+  width: 100%;
+  height: 3.1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+#header .logo-container {
+  display: flex;
+  height: 2.9rem;
+  padding-left: 1.5rem;
+}
+#header .logo-container img {
+  width: 90%;
+  display: block;
+}
+#header .logo-container p {
+  color: #432F61;
+  font-family: time_burner_bold;
+  font-size: 0.8rem;
+  text-align: center;
+}
+#header .nav-bar {
+  width: 100%;
+  height: 3.5rem;
+  padding: 4px 0;
+}
+#header .container-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+#header .navbar-brand {
+  padding: 2px 0 0 2px;
+}
+#header .navbar-toggler {
+  border: none;
+  color: #7F38DE;
+  font-size: 1.5rem;
+  margin: 0 1.5rem 0.5rem;
+}
+#header .navbar-nav {
+  width: 100%;
+  height: 100vh;
+  background-color: #7F38DE;
+  font-family: time_burner_bold;
+  font-size: 1.2rem;
+  text-align: center;
+}
+#header .nav-item a {
+  color: #e8d9fa;
+  margin-top: 3rem;
+  transition: all 0.1s ease-in;
+}
+#header .nav-item ul {
+  height: 80%;
+}
+#header .nav-link:hover {
+  transform: scale(1.2);
+  color: #6620c3;
+}
+
+#footer {
+  grid-area: footer;
+  border-top: 1px solid gray;
+  width: 100%;
+}
+#footer .footer-icons {
+  display: inline-block;
+  margin-right: 25rem;
+}
+#footer .footer-icons a {
+  color: rgb(65, 65, 65);
+}
+
+.index-container {
+  display: grid;
+  grid-template: "header" 3.1rem "carrusel" 14rem "marketing" 70rem "info" 35rem "footer" 6rem;
+}
+
+.index-main {
+  margin-top: 3rem;
+}
+.index-main .carousel {
+  grid-area: carrusel;
+  position: relative;
+}
+.index-main .carousel-item img {
+  width: 100%;
+  min-height: 14rem;
+  filter: sepia(60%);
+  filter: brightness(1.5);
+}
+.index-main .btn-carr {
+  position: absolute;
+  top: 17rem;
+}
+.index-main .carousel-caption em {
+  color: rgb(167, 167, 167);
+}
+.index-main .carousel-control-next-icon,
+.index-main .carousel-control-prev-icon {
+  background-color: rgb(128, 128, 128);
+  text-align: center;
+}
+.index-main .container-marketing {
+  grid-area: marketing;
+}
+.index-main .item-marketing {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.index-main .item-marketing img {
+  width: 100px;
+  height: 100px;
+}
+.index-main .item-marketing h2 {
+  padding-top: 1rem;
+  text-align: center;
+}
+.index-main .item-marketing p {
+  padding: 0 4rem;
+}
+.index-main .index-info {
+  grid-area: info;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  border-top: 1px solid gray;
+  padding-top: 1rem;
+}
+.index-main .info-item i {
+  font-size: 2.5rem;
+  padding: 3rem 0;
+}
+.index-main .info-item p {
+  font-family: time_burner_bold;
+  font-size: 1.1rem;
+}
+.index-main .row {
+  margin-right: 0;
+}
+.index-main .btn-car:hover,
+.index-main .button:hover {
+  transform: scale(1.1);
+  background-color: #4f1997;
+}
+
+.productos-container {
+  display: grid;
+  grid-template: "header" 4.5rem "amuletos" 39rem "anillos" 39rem "aros" 39rem "dijes" 39rem "footer" 100px;
+}
+
+.productos-main {
+  position: relative;
+  margin: 0 3rem;
+}
+.productos-main .separador {
+  margin: 2.5rem 0;
+}
+.productos-main .productos-amuletos {
+  grid-area: amuletos;
+  margin-top: 4rem;
+}
+.productos-main .img-mobile {
+  display: flex;
+  justify-content: space-between;
+}
+.productos-main .img-mobile img {
+  width: 40%;
+}
+.productos-main .img-desktop {
+  display: none;
+}
+.productos-main .productos-anillos {
+  grid-area: anillos;
+}
+.productos-main .productos-aros {
+  grid-area: aros;
+}
+.productos-main .productos-dijes {
+  grid-area: dijes;
+}
+.productos-main #footer {
+  grid-area: footer;
+  border-top: 1px solid gray;
+  width: 100%;
+}
+.productos-main #footer .footer-icons {
+  display: inline-block;
+  margin-right: 25rem;
+}
+.productos-main #footer .footer-icons a {
+  color: rgb(65, 65, 65);
+}
+
+.galeria-main .galeria-titulo {
+  margin-top: 5rem;
+}
+.galeria-main .card {
+  transition: all 0.1s ease-in-out;
+  font-family: slthin;
+  font-size: 1rem;
+}
+.galeria-main .card img {
+  width: 100%;
+  max-height: 255px;
+  padding: 0.7rem;
+  border-radius: 1rem;
+  transition: all 0.1s ease-in-out;
+}
+.galeria-main .menu-fixed .btn:hover {
+  transform: scale(0.9);
+  background-color: #b78fed;
+}
+.galeria-main .card:hover {
+  border: 1px solid black;
+  padding: 0.4rem;
+}
+
+.nosotras-container {
+  display: grid;
+  grid-template: "header" 3.1rem "nosotras" 44rem "taller" 44rem "feria1" 44rem "feria2" 44rem "footer" 6rem;
+}
+
+.nosotras-main {
+  margin: 4rem 3rem 0 3rem;
+}
+.nosotras-main .separador {
+  margin: 3rem 0;
+}
+.nosotras-main .nosotras {
+  grid-area: nosotras;
+}
+.nosotras-main .nosotras-taller {
+  grid-area: taller;
+}
+.nosotras-main .nosotras-feria1 {
+  grid-area: feria1;
+}
+.nosotras-main .nosotras-feria2 {
+  grid-area: feria2;
+}
+.nosotras-main .nosotras .nosotras-img img,
+.nosotras-main .nosotras-taller .nosotras-img img,
+.nosotras-main .nosotras-feria1 .nosotras-img img,
+.nosotras-main .nosotras-feria2 .nosotras-img img {
+  width: 100%;
+}
+.nosotras-main .nosotras-mapa1 iframe,
+.nosotras-main .nosotras-mapa2 iframe {
+  display: none;
+}
+
+.contacto-container {
+  display: grid;
+  grid-template: "header" 3.1rem "contacto" 38rem "footer" 6rem;
+}
+
+.form-contact {
+  grid-area: contacto;
+  margin-top: 3rem;
+}
+.form-contact h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.form-contact .btn {
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+.form-contact .btn:hover {
+  transform: scale(0.3rem 1.5rem);
+  background-color: #611fba;
+}
+
+.index-main .btn-car, .index-main .button, .galeria-main .menu-fixed .btn, .galeria-main .card-body .btn, .form-contact .btn {
+  color: #fff;
+  background-color: #7F38DE;
+  border: 1px solid #000;
+  border-radius: 0.5rem;
+  transition: all 0.1s ease-in-out;
+  font-family: slthin;
+  font-size: 1.1rem;
+}
+
+.productos-main .productos-txt h2, .nosotras-main .nosotras .nosotras-txt h2,
+.nosotras-main .nosotras-taller .nosotras-txt h2,
+.nosotras-main .nosotras-feria1 .nosotras-txt h2,
+.nosotras-main .nosotras-feria2 .nosotras-txt h2 {
+  color: #000;
+  font-family: slthin;
+  font-size: 2.3rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.productos-main .productos-txt p, .nosotras-main .nosotras .nosotras-txt p,
+.nosotras-main .nosotras-taller .nosotras-txt p,
+.nosotras-main .nosotras-feria1 .nosotras-txt p,
+.nosotras-main .nosotras-feria2 .nosotras-txt p {
+  color: #000;
+  font-family: slthin;
+  font-size: 1.2rem;
+  text-align: justify;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 62rem) {
+  #header {
+    height: 4rem;
+  }
+  #header .navbar-toggler {
+    display: none;
+  }
+  #header .navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+    height: 4.5rem;
+    background-color: transparent;
+    overflow-y: hidden;
+    padding: 0.5rem 6rem 0 6rem;
+  }
+  #header .nav-item a {
+    color: #7F38DE;
+    margin: 0 1rem;
+  }
+  #header .logo-container {
+    height: 4rem;
+    padding: 0 0 0 6rem;
+  }
+  #header .logo-container img {
+    width: 100%;
+  }
+  #header .logo-container p {
+    font-size: 0.9rem;
+    text-align: center;
+    padding-left: 0.2rem;
+  }
+  .index-container {
+    display: grid;
+    grid-template: "header" 4rem "carrusel" 35rem "marketing" 25rem "info" 25rem "footer" 6rem;
+  }
+  .index-main .carousel {
+    padding-top: 0;
+  }
+  .index-main .btn-carr {
+    bottom: 1rem;
+    left: 7rem;
+  }
+  .index-main .container-marketing {
+    display: flex;
+  }
+  .index-main .item-marketing {
+    width: 100%;
+    margin: 2rem 0rem;
+  }
+  .index-main .item-marketing img {
+    width: 140px;
+    height: 140px;
+  }
+  .index-main .index-info {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .index-main .info-item {
+    margin-top: 2rem;
+  }
+  .productos-container {
+    display: grid;
+    grid-template: "header" 4.5rem "amuletos" 44rem "anillos" 44rem "aros" 44rem "dijes" 32rem "footer" auto;
+  }
+  .productos-main {
+    margin-top: 1rem;
+  }
+  .productos-main .productos-amuletos,
+.productos-main .productos-anillos,
+.productos-main .productos-aros,
+.productos-main .productos-dijes {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .productos-main .productos-anillos,
+.productos-main .productos-dijes {
+    flex-direction: row-reverse;
+  }
+  .productos-main .productos-txt {
+    display: flex;
+    flex-direction: column;
+  }
+  .productos-main .productos-txt p {
+    margin: 0 2rem;
+  }
+  .productos-main .img-desktop {
+    display: block;
+  }
+  .productos-main .img-mobile {
+    width: 60%;
+    margin: 6rem 8rem 0 8rem;
+  }
+  .productos-main .separador {
+    margin: 4rem 0;
+  }
+  .galeria-main {
+    margin: 0 12rem 4rem 12rem;
+  }
+  .nosotras-container {
+    display: grid;
+    grid-template: "header" 3.1rem "nosotras" 41rem "taller" 41rem "feria1" 41rem "feria2" 41rem "footer" 6rem;
+  }
+  .nosotras-main {
+    margin-top: 5rem;
+  }
+  .nosotras-main .nosotras,
+.nosotras-main .nosotras-taller,
+.nosotras-main .nosotras-feria1,
+.nosotras-main .nosotras-feria2 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nosotras-main .nosotras .nosotras-txt,
+.nosotras-main .nosotras-taller .nosotras-txt,
+.nosotras-main .nosotras-feria1 .nosotras-txt,
+.nosotras-main .nosotras-feria2 .nosotras-txt {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+  .nosotras-main .nosotras .nosotras-txt p,
+.nosotras-main .nosotras-taller .nosotras-txt p,
+.nosotras-main .nosotras-feria1 .nosotras-txt p,
+.nosotras-main .nosotras-feria2 .nosotras-txt p {
+    margin: 0 2rem;
+  }
+  .nosotras-main .nosotras .nosotras-img img,
+.nosotras-main .nosotras-taller .nosotras-img img,
+.nosotras-main .nosotras-feria1 .nosotras-img img,
+.nosotras-main .nosotras-feria2 .nosotras-img img {
+    width: 540px;
+    height: 540px;
+  }
+  .nosotras-main .nosotras-taller,
+.nosotras-main .nosotras-feria2 {
+    flex-direction: row-reverse;
+  }
+  .nosotras-main .nosotras-mapa1 iframe,
+.nosotras-main .nosotras-mapa2 iframe {
+    display: block;
+    margin: 4rem 0 0 10rem;
+  }
+  .nosotras-main .separador {
+    margin: 4rem 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

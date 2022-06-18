@@ -1,0 +1,67 @@
+.productos-container {
+	display: grid;
+	grid-template: "header"4.5rem "amuletos" 39rem "anillos" 39rem "aros" 39rem "dijes"
+	39rem "footer" 100px;
+}
+
+.productos-main{
+	position: relative;
+	margin: 0 3rem;
+
+	.separador {
+		margin: 2.5rem 0;
+	}
+
+	.productos-amuletos {
+		grid-area: amuletos;
+		margin-top: 4rem;
+	}
+
+	.productos-txt {
+		h2 {
+			@extend %encabezados;
+		}
+		p {
+			@extend %texto;
+		}
+	}
+
+	.img-mobile {
+		display: flex;
+		justify-content: space-between;
+		img {
+			width: 40%;
+		}
+	}
+
+	.img-desktop {
+		display: none;
+	}
+
+	.productos-anillos {
+		grid-area: anillos;
+	}
+
+	.productos-aros {
+		grid-area: aros;
+	}
+
+	.productos-dijes {
+		grid-area: dijes;
+	}
+
+	#footer {
+		grid-area: footer;
+		border-top: 1px solid gray;
+		width: 100%;
+		
+		.footer-icons {
+			display: inline-block;
+			margin-right: 25rem;
+	
+			a {
+				color: rgb(65, 65, 65);
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+{
+  "name": "sass-amuletos-del-alma",
+  "version": "1.0.0",
+  "description": "Segunda entrega del proyecto final para el curso de Desarrollador Web de Coderhouse.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leotricotti/sass-amuletos-del-alma.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leotricotti/sass-amuletos-del-alma/issues"
+  },
+  "homepage": "https://github.com/leotricotti/sass-amuletos-del-alma#readme"
+}
