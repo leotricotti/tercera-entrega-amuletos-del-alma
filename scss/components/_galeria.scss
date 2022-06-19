@@ -6,6 +6,10 @@
 		margin-top: 5rem;
 	}
 
+	.py-lg-5 {
+		padding: 0 0 !important;
+	}
+
 	.menu-fixed{
 		.btn {
 			@extend %buttons;

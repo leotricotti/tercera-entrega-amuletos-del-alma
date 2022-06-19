@@ -38,6 +38,18 @@ a {
     text-decoration: none;
 }
 
+.separador {
+    margin: 3rem 0;
+}
+
+.separador-footer {
+    margin-top: 3rem;
+}
+
+.pt-4 {
+    padding-top: 0 !important;
+}
+
 @import "../scss/components/header";
 @import "../scss/components/footer";
 @import "../scss/components/index";

@@ -4,9 +4,10 @@
 	display: grid;
 	grid-template: "header" "contacto" "footer";
 }
+
 .form-contact {
 	grid-area: contacto;
-	margin-top: 3rem;
+	margin-top: 5rem;
 	h2 {
 		text-align: center;
 		margin-bottom: 2rem;
@@ -23,4 +24,8 @@
             @include hovers(.3rem 1.5rem, darken(#7F38DE, 12) );
         }
     }
+
+	#footer {
+		border-top: 1px solid gray;
+	}
 }

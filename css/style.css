@@ -35,6 +35,18 @@ a {
   text-decoration: none;
 }
 
+.separador {
+  margin: 3rem 0;
+}
+
+.separador-footer {
+  margin-top: 3rem;
+}
+
+.pt-4 {
+  padding-top: 0 !important;
+}
+
 #header {
   grid-area: header;
   background-color: rgb(232, 217, 250);
@@ -104,7 +116,6 @@ a {
 
 #footer {
   grid-area: footer;
-  border-top: 1px solid gray;
   width: 100%;
 }
 #footer .footer-icons {
@@ -195,9 +206,6 @@ a {
   position: relative;
   margin: 0 3rem;
 }
-.productos-main .separador {
-  margin: 2.5rem 0;
-}
 .productos-main .productos-amuletos {
   grid-area: amuletos;
   margin-top: 4rem;
@@ -208,7 +216,6 @@ a {
 }
 .productos-main .img-mobile img {
   width: 40%;
-  margin-bottom: 2rem;
 }
 .productos-main .img-desktop {
   display: none;
@@ -225,6 +232,9 @@ a {
 
 .galeria-main .galeria-titulo {
   margin-top: 5rem;
+}
+.galeria-main .py-lg-5 {
+  padding: 0 0 !important;
 }
 .galeria-main .card {
   transition: all 0.1s ease-in-out;
@@ -255,9 +265,6 @@ a {
 .nosotras-main {
   margin: 4rem 3rem 0 3rem;
 }
-.nosotras-main .separador {
-  margin: 1rem 0;
-}
 .nosotras-main .nosotras {
   grid-area: nosotras;
 }
@@ -275,7 +282,6 @@ a {
 .nosotras-main .nosotras-feria1 .nosotras-img img,
 .nosotras-main .nosotras-feria2 .nosotras-img img {
   width: 100%;
-  margin-bottom: 2rem;
 }
 .nosotras-main .nosotras-mapa1 iframe,
 .nosotras-main .nosotras-mapa2 iframe {
@@ -289,7 +295,7 @@ a {
 
 .form-contact {
   grid-area: contacto;
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
 .form-contact h2 {
   text-align: center;
@@ -302,6 +308,9 @@ a {
 .form-contact .btn:hover {
   transform: scale(0.3rem 1.5rem);
   background-color: #611fba;
+}
+.form-contact #footer {
+  border-top: 1px solid gray;
 }
 
 .index-main .btn-car, .index-main .button, .galeria-main .menu-fixed .btn, .galeria-main .card-body .btn, .form-contact .btn {
