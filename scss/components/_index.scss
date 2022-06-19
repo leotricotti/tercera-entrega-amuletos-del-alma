@@ -2,7 +2,7 @@
 
 .index-container {
     display: grid;
-    grid-template: "header"3.1rem "carrusel"14rem "marketing"70rem "info"35rem "footer"6rem;
+    grid-template: "header" "carrusel" "marketing" "info" "footer";
 }
 
 .index-main {
@@ -10,7 +10,7 @@
     
     .carousel {
         grid-area: carrusel;
-        position: relative;
+       
     }
 
     .carousel-item {
@@ -21,18 +21,14 @@
             filter: brightness(1.5);
         }
     }
-
-    .btn-carr {
-        position: absolute;
-        top: 17rem;
-    }
-
-
-    .btn-car {
-        @extend %buttons
+    
+   .btn-car {
+        @extend %buttons;
     }
 
     .carousel-caption {
+        bottom: 0;
+        padding-bottom: 0;
         em {
             color: rgb(167, 167, 167);
         }
@@ -75,7 +71,7 @@
         color: rgb(0, 0, 0);
         text-align: center;
         border-top: 1px solid gray;
-        padding-top: 1rem;
+        margin: 2rem 0;
     }
 
     .info-item {

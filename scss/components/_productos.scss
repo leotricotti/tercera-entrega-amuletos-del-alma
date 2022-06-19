@@ -1,7 +1,7 @@
 .productos-container {
 	display: grid;
-	grid-template: "header"4.5rem "amuletos" 39rem "anillos" 39rem "aros" 39rem "dijes"
-	39rem "footer" 100px;
+	grid-template: "header" "amuletos" "anillos" "aros" "dijes"
+	"footer";
 }
 
 .productos-main{
@@ -31,6 +31,7 @@
 		justify-content: space-between;
 		img {
 			width: 40%;
+			margin-bottom: 2rem;
 		}
 	}
 
@@ -50,18 +51,4 @@
 		grid-area: dijes;
 	}
 
-	#footer {
-		grid-area: footer;
-		border-top: 1px solid gray;
-		width: 100%;
-		
-		.footer-icons {
-			display: inline-block;
-			margin-right: 25rem;
-	
-			a {
-				color: rgb(65, 65, 65);
-			}
-		}
-	}
 }

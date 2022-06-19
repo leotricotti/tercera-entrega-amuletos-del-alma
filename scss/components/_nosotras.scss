@@ -1,13 +1,13 @@
 .nosotras-container {
 	display: grid;
-	grid-template: "header"3.1rem "nosotras"44rem "taller"44rem "feria1"44rem "feria2"44rem "footer"6rem;
+	grid-template: "header" "nosotras" "taller" "feria1" "feria2" "footer";
 }
 
 .nosotras-main {
     margin: 4rem 3rem 0 3rem;
 
 	.separador {
-		margin: 3rem 0;
+		margin: 1rem 0;
 	}
 
 	.nosotras {
@@ -44,6 +44,7 @@
 		.nosotras-img {
 			img {
 				width: 100%;
+				margin-bottom: 2rem;
 			}
 		}
 	}

@@ -2,7 +2,7 @@
 
 .contacto-container {
 	display: grid;
-	grid-template: "header" 3.1rem "contacto" 38rem "footer" 6rem;
+	grid-template: "header" "contacto" "footer";
 }
 .form-contact {
 	grid-area: contacto;
@@ -18,8 +18,7 @@
 			margin-bottom: 5rem;
 	}
 	
-
-    .btn {
+	.btn {
 		&:hover {
             @include hovers(.3rem 1.5rem, darken(#7F38DE, 12) );
         }

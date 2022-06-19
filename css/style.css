@@ -35,10 +35,6 @@ a {
   text-decoration: none;
 }
 
-.disclaimer {
-  display: none;
-}
-
 #header {
   grid-area: header;
   background-color: rgb(232, 217, 250);
@@ -121,7 +117,7 @@ a {
 
 .index-container {
   display: grid;
-  grid-template: "header" 3.1rem "carrusel" 14rem "marketing" 70rem "info" 35rem "footer" 6rem;
+  grid-template: "header" "carrusel" "marketing" "info" "footer";
 }
 
 .index-main {
@@ -129,7 +125,6 @@ a {
 }
 .index-main .carousel {
   grid-area: carrusel;
-  position: relative;
 }
 .index-main .carousel-item img {
   width: 100%;
@@ -137,9 +132,9 @@ a {
   filter: sepia(60%);
   filter: brightness(1.5);
 }
-.index-main .btn-carr {
-  position: absolute;
-  top: 17rem;
+.index-main .carousel-caption {
+  bottom: 0;
+  padding-bottom: 0;
 }
 .index-main .carousel-caption em {
   color: rgb(167, 167, 167);
@@ -172,7 +167,7 @@ a {
   color: rgb(0, 0, 0);
   text-align: center;
   border-top: 1px solid gray;
-  padding-top: 1rem;
+  margin: 2rem 0;
 }
 .index-main .info-item i {
   font-size: 2.5rem;
@@ -193,7 +188,7 @@ a {
 
 .productos-container {
   display: grid;
-  grid-template: "header" 4.5rem "amuletos" 39rem "anillos" 39rem "aros" 39rem "dijes" 39rem "footer" 100px;
+  grid-template: "header" "amuletos" "anillos" "aros" "dijes" "footer";
 }
 
 .productos-main {
@@ -213,6 +208,7 @@ a {
 }
 .productos-main .img-mobile img {
   width: 40%;
+  margin-bottom: 2rem;
 }
 .productos-main .img-desktop {
   display: none;
@@ -225,18 +221,6 @@ a {
 }
 .productos-main .productos-dijes {
   grid-area: dijes;
-}
-.productos-main #footer {
-  grid-area: footer;
-  border-top: 1px solid gray;
-  width: 100%;
-}
-.productos-main #footer .footer-icons {
-  display: inline-block;
-  margin-right: 25rem;
-}
-.productos-main #footer .footer-icons a {
-  color: rgb(65, 65, 65);
 }
 
 .galeria-main .galeria-titulo {
@@ -265,14 +249,14 @@ a {
 
 .nosotras-container {
   display: grid;
-  grid-template: "header" 3.1rem "nosotras" 44rem "taller" 44rem "feria1" 44rem "feria2" 44rem "footer" 6rem;
+  grid-template: "header" "nosotras" "taller" "feria1" "feria2" "footer";
 }
 
 .nosotras-main {
   margin: 4rem 3rem 0 3rem;
 }
 .nosotras-main .separador {
-  margin: 3rem 0;
+  margin: 1rem 0;
 }
 .nosotras-main .nosotras {
   grid-area: nosotras;
@@ -291,6 +275,7 @@ a {
 .nosotras-main .nosotras-feria1 .nosotras-img img,
 .nosotras-main .nosotras-feria2 .nosotras-img img {
   width: 100%;
+  margin-bottom: 2rem;
 }
 .nosotras-main .nosotras-mapa1 iframe,
 .nosotras-main .nosotras-mapa2 iframe {
@@ -299,7 +284,7 @@ a {
 
 .contacto-container {
   display: grid;
-  grid-template: "header" 3.1rem "contacto" 38rem "footer" 6rem;
+  grid-template: "header" "contacto" "footer";
 }
 
 .form-contact {
@@ -382,19 +367,14 @@ a {
     text-align: center;
     padding-left: 0.2rem;
   }
-  .index-container {
-    display: grid;
-    grid-template: "header" 4rem "carrusel" 35rem "marketing" 25rem "info" 30rem "footer" 6rem;
-  }
   .index-main .carousel {
     padding-top: 0;
   }
-  .index-main .btn-carr {
-    bottom: 1rem;
-    left: 7rem;
-  }
   .index-main .container-marketing {
     display: flex;
+  }
+  .index-main .btn-car {
+    margin-bottom: 4rem;
   }
   .index-main .item-marketing {
     width: 100%;
@@ -410,10 +390,6 @@ a {
   }
   .index-main .info-item {
     margin: 2rem 0;
-  }
-  .productos-container {
-    display: grid;
-    grid-template: "header" 4.5rem "amuletos" 44rem "anillos" 44rem "aros" 44rem "dijes" 32rem "footer" auto;
   }
   .productos-main {
     margin-top: 1rem;
@@ -448,10 +424,6 @@ a {
   }
   .galeria-main {
     margin: 0 12rem 4rem 12rem;
-  }
-  .nosotras-container {
-    display: grid;
-    grid-template: "header" 3.1rem "nosotras" 41rem "taller" 41rem "feria1" 41rem "feria2" 41rem "footer" 6rem;
   }
   .nosotras-main {
     margin-top: 5rem;
